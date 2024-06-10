@@ -1,10 +1,15 @@
 body {
     font-family: Arial, sans-serif;
+    background: #b3acac;
+}
+
+.card-body{
+    background: #b3acac;
 }
 
 .progress-bar {
     position: relative;
-    background-color: #28a745;
+    background-color: #7b00ff;
     text-align: center;
 }
 
