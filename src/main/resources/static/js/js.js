@@ -27,7 +27,7 @@ function updateProgressBar() {
     clicksLeftElement.textContent = `${milestone - score} собранных скуфов до следующего уровня`;
 
     if (score <= milestones[0]) {
-        rankElement.textContent = "Новичок Скуфозавоев";
+        rankElement.textContent = "Без ранга";
     } else if (score <= milestones[1]) {
         rankElement.textContent = "Охотник за Скуфами";
         scorerank = 2;
@@ -80,3 +80,8 @@ function updateProgressBar() {
         currentMilestoneIndex += 1;
     }
 }
+document.addEventListener('touchstart', function(event) {
+    if (event.touches.length > 1) {
+        event.preventDefault();
+    }
+}, { passive: false });

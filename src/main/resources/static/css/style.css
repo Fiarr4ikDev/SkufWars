@@ -1,10 +1,14 @@
 body {
     font-family: Arial, sans-serif;
     background: #b3acac;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
-.card-body{
+.card-body {
     background: #b3acac;
+    padding: 20px;
 }
 
 .progress-bar {
@@ -22,16 +26,17 @@ body {
     color: #000000;
 }
 
-
 #clicks-left {
     font-size: 14px;
     color: #555;
 }
 
-
 .photo-frame {
     cursor: pointer;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .photo-frame img {
@@ -39,4 +44,27 @@ body {
     height: auto;
     display: block;
     border-radius: 0.25rem;
+}
+
+/* Additional styles for mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .photo-frame {
+        max-width: 100%;
+    }
+
+    h1.display-4 {
+        font-size: 2.5rem;
+    }
+
+    p.lead {
+        font-size: 1.25rem;
+    }
 }

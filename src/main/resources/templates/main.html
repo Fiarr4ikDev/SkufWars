@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>SkufWars</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> <!-- Prevent zooming on mobile -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" th:href="@{/css/style.css}">
     <script th:src="@{/js/js.js}" defer></script>
@@ -16,7 +17,7 @@
                     <h1 class="display-4">SkufWars</h1>
                 </div>
                 <p class="text-center mb-2">Ваш ранг </p>
-                <p id="rank" class="text-center mb-2"></p>
+                <p id="rank" class="text-center mb-2">Без ранга</p>
                 <div class="progress mb-4">
                     <div class="progress-bar" id="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0"
                          aria-valuemin="0" aria-valuemax="100"><span id="progress-percentage">0%</span>
