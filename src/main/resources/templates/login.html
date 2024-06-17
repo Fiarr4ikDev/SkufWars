@@ -5,7 +5,7 @@
     <title>SkufWars</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> <!-- Prevent zooming on mobile -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" th:href="@{/css/main.css}">
+    <link rel="stylesheet" th:href="@{/css/login.css}">
     <script th:src="@{/js/js.js}" defer></script>
 </head>
 <body>
@@ -22,6 +22,23 @@
                     <div class="progress-bar" id="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0"
                          aria-valuemin="0" aria-valuemax="100"><span id="progress-percentage">0%</span>
                     </div>
+                </div>
+                <div class="container">
+                    <label for="Name"><b>Name</b></label>
+                    <div class = "searchbar">
+                        <input type="text" placeholder="Enter your name" name="name" id="name" required>
+                    </div>
+                    <label><b>PassWord</b></label>
+                    <div class = "searchbar">
+                        <input type="password" placeholder="Enter password" name="psw" id="psw" required>
+                        <p></p>
+                    </div>
+                </div>
+                <div class = "menubar">
+                    <ul>
+                        <li><a href = "#">Sign in</a></li>
+                        <li><a href = "#">Log in</a></li>
+                    </ul>
                 </div>
                 <div class="photo-frame text-center mb-4" onclick="incrementCounter()">
                     <img th:src="@{/pic/pix.jpg}" alt="Image" class="img-fluid">
